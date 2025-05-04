@@ -1,0 +1,61 @@
+<div class="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md mt-8">
+  <h2 class="text-2xl font-bold mb-4">Réserver un billet</h2>
+
+  <form (ngSubmit)="submitForm(ticketForm)" #ticketForm="ngForm" novalidate>
+    <div class="mb-4">
+      <label class="block mb-1 font-semibold">Nom</label>
+      <input
+        type="text"
+        [(ngModel)]="name"
+        name="name"
+        required
+        class="w-full border border-gray-300 p-2 rounded"
+        #nameInput="ngModel"
+      />
+      <p *ngIf="nameInput.invalid && nameInput.touched" class="text-red-600 text-sm">
+        Le nom est requis.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-1 font-semibold">Destination</label>
+      <input
+        type="text"
+        [(ngModel)]="destination"
+        name="destination"
+        required
+        class="w-full border border-gray-300 p-2 rounded"
+        #destinationInput="ngModel"
+      />
+      <p *ngIf="destinationInput.invalid && destinationInput.touched" class="text-red-600 text-sm">
+        La destination est requise.
+      </p>
+    </div>
+
+    <div class="mb-4">
+      <label class="block mb-1 font-semibold">Date</label>
+      <input
+        type="date"
+        [(ngModel)]="date"
+        name="date"
+        required
+        class="w-full border border-gray-300 p-2 rounded"
+        #dateInput="ngModel"
+      />
+      <p *ngIf="dateInput.invalid && dateInput.touched" class="text-red-600 text-sm">
+        La date est requise.
+      </p>
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="ticketForm.invalid"
+      class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+    >
+      Réserver
+    </button>
+
+    <p *ngIf="successMessage" class="text-green-600 mt-4">{{ successMessage }}</p>
+  </form>
+</div>
+<router-outlet></router-outlet>
