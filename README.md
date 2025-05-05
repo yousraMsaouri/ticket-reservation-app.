@@ -1,9 +1,6 @@
 # ticket-reservation-app
 
 
-![image](https://github.com/user-attachments/assets/6f61fbc1-c3d3-4597-a0ed-35270782df9b)
-
-
 ### Overview
 The Ticket Reservation App is a Progressive Web Application (PWA) built with Angular 19 that allows users to:
 
@@ -47,7 +44,9 @@ Angular CLI v19+
 
 Run the development server:
   ==> ng serve
-![image](https://github.com/user-attachments/assets/10b208b2-5b53-4b05-99b4-95613cb62a26)
 
+### Demo Video:
+Here is a short demo of the Ticket Reservation App, showing its functionality and features:
+https://drive.google.com/file/d/1t_dxaavHZR9jlbnJ6GHUhIV-tyRb0qdD/view?usp=sharing
 
 
