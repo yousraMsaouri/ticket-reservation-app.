@@ -47,6 +47,6 @@ Run the development server:
 
 ### Demo Video:
 Here is a short demo of the Ticket Reservation App, showing its functionality and features:
-https://drive.google.com/file/d/1t_dxaavHZR9jlbnJ6GHUhIV-tyRb0qdD/view?usp=sharing
+https://drive.google.com/file/d/12RZ7NDrVctL_rCZFE9IFTeApeVYf1n4e/view?usp=sharing
 
 
